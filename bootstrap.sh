@@ -1,14 +1,15 @@
 #!/usr/bin/env sh
 
-git pull origin main;
+git pull origin master;
 
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude "bootstrap.sh" \
 		-avh --no-perms . ~;
-	source ~/.zshrc;
 }
+
+echo "$1";
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt;
