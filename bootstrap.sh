@@ -6,7 +6,7 @@ function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude "bootstrap.sh" \
-		-avh --no-perms . ~;
+		-avh --no-perms . ~/.config;
 }
 
 echo "$1";

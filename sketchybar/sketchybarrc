@@ -30,7 +30,7 @@ sketchybar --bar     height=39                                           \
            --default drawing=on                                          \
                      updates=when_shown                                  \
                      label.font="$FONT:Semibold:13.0"                    \
-                     icon.font="$FONT:Bold:14.0"                         \
+                     icon.font="MesloLGS NF:Regular:16.0"           \
                      icon.color=$ICON_COLOR                              \
                      label.color=$LABEL_COLOR                            \
                      icon.padding_left=$PADDINGS                         \
@@ -52,7 +52,10 @@ source "$ITEM_DIR/spotify.sh"
 
 # Right
 source "$ITEM_DIR/calendar.sh"
+source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/cpu.sh"
+
+# sketchybar --add alias "Control Center,WiFI" right alias.color=$BLUE
 
 ############## FINALIZING THE SETUP ##############
 sketchybar --update

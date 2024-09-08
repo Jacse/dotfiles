@@ -88,13 +88,14 @@ outer.right =      8
 # All possible commands: https://nikitabobko.github.io/AeroSpace/commands
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion horizontal vertical'
+alt-t = 'layout tiles horizontal vertical'
+# alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 alt-j = 'focus left'
 alt-k = 'focus down'
-alt-i = 'focus up'
+# have to disable up for now because on Danish keyboard alt+i writes the pipe character and I need that :( :( :(
+# alt-i = 'focus up'
 alt-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
@@ -104,7 +105,9 @@ alt-shift-i = 'move up'
 alt-shift-l = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-alt-equal = 'resize smart -50'
+# slash = minus on danish keyboard
+alt-slash = 'resize smart -50'
+# minus = plus on danish keyboard
 alt-minus = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
