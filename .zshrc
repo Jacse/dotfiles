@@ -35,6 +35,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # Add spicetify
 export PATH=$PATH:~/.spicetify
 
+# For PDM
+export PATH=/Users/jacob/Library/Python/3.11/bin:$PATH
+
 alias nah="git reset --hard && git clean -df"
 alias n="pnpm nx"
 alias home="cd ~"

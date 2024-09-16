@@ -64,7 +64,7 @@ inner.horizontal = 8
 inner.vertical =   8
 outer.left =       8
 outer.bottom =     8
-outer.top =        [{ monitor.main = 24 }, 32] # different for mac built-in and external monitor
+outer.top =        [{ monitor.built-in = 24 }, 54] # different for mac built-in and external monitor
 outer.right =      8
 
 # 'main' binding mode declaration
