@@ -21,5 +21,13 @@ brew install --cask raycast
 # apps
 brew install neovim
 
+# tools
+brew install dive # debug docker files
+brew install lazygit # git tui
+brew install exa # better ls
+brew install bat # better cat
+brew install pgcli
+
+
 # Remove outdated versions from the cellar.
 brew cleanup
