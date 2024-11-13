@@ -20,6 +20,7 @@ brew install --cask raycast
 
 # apps
 brew install neovim
+brew install --cask kitty
 
 # tools
 brew install dive # debug docker files

@@ -3,10 +3,9 @@
 git pull origin master;
 
 function doIt() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude "bootstrap.sh" \
-		-avh --no-perms . ~/.config;
+	rsync -avh --no-perms config ~/.config;
+
+	rsync -avh --no-perms dots ~/;
 }
 
 echo "$1";
