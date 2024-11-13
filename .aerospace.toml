@@ -163,6 +163,10 @@ if.app-id = 'com.tinyspeck.slackmacgap'
 check-further-callbacks = true
 run = 'move-node-to-workspace 2'
 
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser' # arc
+check-further-callbacks = true
+run = 'move-node-to-workspace 1'
 
 # default floating windows for certain apps
 [[on-window-detected]]
