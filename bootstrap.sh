@@ -3,9 +3,9 @@
 git pull origin master;
 
 function doIt() {
-	rsync -avh --no-perms config ~/.config;
+	rsync -avh --no-perms config/ ~/.config;
 
-	rsync -avh --no-perms dots ~/;
+	rsync -avh --no-perms dots/ ~/;
 }
 
 echo "$1";
