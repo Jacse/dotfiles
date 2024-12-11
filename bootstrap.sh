@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-git pull origin master;
+# git pull origin master;
 
 function doIt() {
 	rsync -avh --no-perms config/ ~/.config;

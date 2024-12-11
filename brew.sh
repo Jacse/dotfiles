@@ -11,6 +11,7 @@ brew upgrade
 # utils
 brew install jq
 brew install git-lfs
+brew install ripgrep
 
 # config
 brew install --cask nikitabobko/tap/aerospace
@@ -21,6 +22,7 @@ brew install --cask raycast
 # apps
 brew install neovim
 brew install --cask kitty
+brew install --cask neovide
 
 # tools
 brew install dive # debug docker files

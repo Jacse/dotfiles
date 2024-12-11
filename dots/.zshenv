@@ -10,3 +10,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export PAGER='less'
 export FONT='Isoevka Nerd Font Mono'
+
+# Volta  install
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
