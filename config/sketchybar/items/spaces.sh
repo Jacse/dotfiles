@@ -9,7 +9,7 @@ for sid in $(aerospace list-workspaces --all); do
               --subscribe space.$sid aerospace_workspace_change \
               --set space.$sid \
               icon=${SPACE_ICONS[$((sid))]} \
-              icon.font="MesloLGS NF:Bold:14.0" \
+              icon.font="JetBrainsMono Nerd Font:Regular:14.0" \
               icon.padding_left=12               \
               icon.padding_right=12              \
               background.height=26               \

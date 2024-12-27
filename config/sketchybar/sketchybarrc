@@ -7,30 +7,31 @@ ITEM_DIR="$HOME/.config/sketchybar/items" # Directory where the items are config
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins" # Directory where all the plugin scripts are stored
 
 FONT="SF Pro" # Needs to have Regular, Bold, Semibold, Heavy and Black variants
+ICON_FONT="JetBrainsMono Nerd Font"
 
 SHADOW=on
 
 # Setting up the general bar appearance and default values
-sketchybar --bar     height=39                                           \
+sketchybar --bar     height=36                                           \
                      corner_radius=9                                     \
                      border_width=0                                      \
-                     margin=8                                            \
-                     blur_radius=50                                      \
+                     margin=10                                            \
+                     blur_radius=36                                      \
                      position=top                                        \
-                     padding_left=10                                     \
-                     padding_right=10                                    \
+                     padding_left=8                                     \
+                     padding_right=8                                    \
                      color=$BAR_COLOR                                    \
                      topmost=off                                         \
                      sticky=on                                           \
-                     font_smoothing=off                                  \
+                     font_smoothing=on                                  \
                      y_offset=8                                          \
                      shadow=$SHADOW                                      \
                      notch_width=200                                     \
                                                                          \
            --default drawing=on                                          \
                      updates=when_shown                                  \
-                     label.font="$FONT:Semibold:13.0"                    \
-                     icon.font="MesloLGS NF:Regular:16.0"           \
+                     label.font="$FONT:Regular:12.0"                     \
+                     icon.font="$ICON_FONT:Regular:14.0"                 \
                      icon.color=$ICON_COLOR                              \
                      label.color=$LABEL_COLOR                            \
                      icon.padding_left=$PADDINGS                         \
@@ -52,10 +53,13 @@ source "$ITEM_DIR/spotify.sh"
 
 # Right
 source "$ITEM_DIR/calendar.sh"
-source "$ITEM_DIR/battery.sh"
-source "$ITEM_DIR/cpu.sh"
 
-# sketchybar --add alias "Control Center,WiFI" right alias.color=$BLUE
+# Right OS stuff
+sketchybar --add alias "Control Center,WiFi" right --set "Control Center,WiFi" alias.color=$ICON_COLOR
+sketchybar --add alias "Control Center,Battery" right --set "Control Center,Battery" alias.color=$ICON_COLOR
+
+source "$ITEM_DIR/cpu.sh"
+source "$ITEM_DIR/bluetooth.sh"
 
 ############## FINALIZING THE SETUP ##############
 sketchybar --update

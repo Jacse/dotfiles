@@ -15,12 +15,12 @@ update ()
   args=()
   if [ $PLAYING -eq 0 ]; then
     if [ "$ARTIST" == "" ]; then
-      args+=(--set spotify.name icon="$TRACK" label="$ALBUM" drawing=on --set spotify background.drawing=on --set spotify.logo icon.drawing=on)
+      args+=(--set spotify.name icon="$TRACK" label="$ALBUM" drawing=on --set spotify drawing=on --set spotify.logo drawing=on)
     else
-      args+=(--set spotify.name icon="$TRACK" label="$ARTIST" drawing=on --set spotify background.drawing=on --set spotify.logo icon.drawing=on)
+      args+=(--set spotify.name icon="$TRACK" label="$ARTIST" drawing=on --set spotify drawing=on --set spotify.logo drawing=on)
     fi
   else
-    args+=(--set spotify.name drawing=off --set spotify background.drawing=off --set spotify.logo icon.drawing=off)
+    args+=(--set spotify.name drawing=off --set spotify drawing=off --set spotify.logo drawing=off)
   fi
   sketchybar -m "${args[@]}"
 }

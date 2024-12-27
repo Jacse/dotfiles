@@ -6,6 +6,9 @@ function doIt() {
 	rsync -avh --no-perms config/ ~/.config;
 
 	rsync -avh --no-perms dots/ ~/;
+
+  # Ensure all sketchybar scripts are executable
+  find ~/.config/sketchybar -type f -name "*.sh" -exec chmod +x {} \;
 }
 
 echo "$1";

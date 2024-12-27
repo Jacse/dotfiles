@@ -11,8 +11,6 @@ MAGENTA=0xffc6a0f6
 TRANSPARENT=0x00000000
 
 # General bar colors
-# BAR_COLOR=0xcc24273a #$GREY # Grey bar
-# BAR_COLOR=$BLACK #$GREY # Grey bar
 ICON_COLOR=$WHITE # Color of all icons
 LABEL_COLOR=$WHITE # Color of all labels
 
@@ -24,15 +22,13 @@ SHADOW_COLOR=$BLACK
 # Item specific special colors
 SPOTIFY_GREEN=0xff1db954
 
-
-
 RED=0ffed8796
 
 TEXT=0xffcad3f5
 SUBTEXT0_TRANSPARENT=0xaaa5adcb
 
-SURFACE=0Xff363a4f
+SURFACE=0xff363a4f
 BASE=0xff24273a
 MANTLE=0xff1e2030
 
-BAR_COLOR=$SURFACE
+BAR_COLOR=0x33363a4f
