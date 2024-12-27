@@ -6,6 +6,8 @@ WHITE=0xffcad3f5
 GREEN=0xffa6da95
 BLUE=0xff8aadf4
 YELLOW=0xffeed49f
+RED=0ffed8796
+
 ORANGE=0xfff5a97f
 MAGENTA=0xffc6a0f6
 TRANSPARENT=0x00000000
@@ -21,8 +23,6 @@ SHADOW_COLOR=$BLACK
 
 # Item specific special colors
 SPOTIFY_GREEN=0xff1db954
-
-RED=0ffed8796
 
 TEXT=0xffcad3f5
 SUBTEXT0_TRANSPARENT=0xaaa5adcb

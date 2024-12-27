@@ -11,11 +11,12 @@ sketchybar --add       item             spotify.logo left                  \
                                         icon.padding_left=8                \
                                         label.padding_right=8              \
                                         icon.color=$TEXT                   \
-                                        icon.font="$FONT:Black:12.0"       \
+                                        icon.font="$FONT:SemiBold:12.0"    \
                                         label.font="$FONT:Medium:12.0"     \
                                         label.color=$SUBTEXT0_TRANSPARENT  \
                                         script="$PLUGIN_DIR/spotify.sh"    \
-           --subscribe spotify.name     spotify_change                     \
+                                        update_freq=60                     \
+          --subscribe spotify.name      spotify_change                     \
            --add bracket spotify        spotify.logo spotify.name          \
            --set         spotify        background.height=26               \
                                         background.corner_radius=9         \

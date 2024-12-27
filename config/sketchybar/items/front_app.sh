@@ -5,6 +5,6 @@ sketchybar --add       item         front_app left                    \
                                     icon.drawing=off                  \
                                     background.padding_right=48         \
                                     label.color=$TEXT                 \
-                                    label.font="$FONT:Black:12.0"     \
+                                    label.font="$FONT:SemiBold:12.0"     \
            --subscribe front_app    front_app_switched
 
