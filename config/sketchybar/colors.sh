@@ -13,7 +13,7 @@ MAGENTA=0xffc6a0f6
 TRANSPARENT=0x00000000
 
 # General bar colors
-ICON_COLOR=$WHITE # Color of all icons
+ICON_COLOR=$WHITE  # Color of all icons
 LABEL_COLOR=$WHITE # Color of all labels
 
 POPUP_BACKGROUND_COLOR=$BLACK

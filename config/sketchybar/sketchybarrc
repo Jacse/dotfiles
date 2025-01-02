@@ -54,8 +54,8 @@ source "$ITEM_DIR/spotify.sh"
 # Right
 source "$ITEM_DIR/calendar.sh"
 
-sketchybar --add alias "Control Center,WiFi" right
-sketchybar --add alias "Control Center,Battery" right
+sketchybar --add alias "Control Center,WiFi" right --set "Control Center,WiFi" alias.update_freq=20
+sketchybar --add alias "Control Center,Battery" right --set "Control Center,Battery" alias.update_freq=60
 
 source "$ITEM_DIR/cpu.sh"
 source "$ITEM_DIR/bluetooth.sh"

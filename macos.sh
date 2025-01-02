@@ -17,7 +17,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Jacobs Macbook pro"
+sudo scutil --set ComputerName "Jakes Macbook pro"
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool "true"
@@ -40,6 +40,8 @@ defaults write com.apple.dock magnification -bool "true"
 # Set the magnified icon size of Dock items to 48 pixels
 defaults write com.apple.dock largesize -int 48
 
+# Always show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent YES
 
 ####### Aerospace
 
@@ -48,19 +50,6 @@ defaults write com.apple.dock largesize -int 48
 defaults write com.apple.spaces spans-displays -bool true
 # move windows by holding ctrl+cmd and dragging any part of the window
 defaults write -g NSWindowShouldDragOnGesture -bool true
-
-###############################################################################
-# iTerm2                                                  #
-###############################################################################
-
-# Don’t display the annoying prompt when quitting iTerm
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-
 
 ###############################################################################
 # Kill affected applications                                                  #

@@ -15,8 +15,9 @@ sketchybar --add       item             spotify.logo left                  \
                                         label.font="$FONT:Medium:12.0"     \
                                         label.color=$SUBTEXT0_TRANSPARENT  \
                                         script="$PLUGIN_DIR/spotify.sh"    \
-                                        update_freq=60                     \
-          --subscribe spotify.name      spotify_change                     \
+                                        drawing=off                        \
+                                        updates=on                         \
+           --subscribe spotify.name     spotify_change                     \
            --add bracket spotify        spotify.logo spotify.name          \
            --set         spotify        background.height=26               \
                                         background.corner_radius=9         \

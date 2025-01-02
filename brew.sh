@@ -30,5 +30,6 @@ brew install lazygit # git tui
 brew install lsd # better ls
 brew install bat # better cat
 brew install fs # better find
+brew isntall fzf
 brew install pgcli
 brew install fsouza/prettierd/prettierd # prettier as a daemon
