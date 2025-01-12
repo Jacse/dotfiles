@@ -1,0 +1,42 @@
+[
+  {
+    "bindings": {
+      "alt-cmd-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "alt-cmd-left": ["workspace::ActivatePaneInDirection", "Left"],
+      "alt-cmd-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "alt-cmd-right": ["workspace::ActivatePaneInDirection", "Right"],
+      "alt-cmd-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "alt-cmd-up": ["workspace::ActivatePaneInDirection", "Up"],
+      "alt-cmd-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "alt-cmd-down": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem",
+      "cmd-d": "pane::SplitRight",
+      "cmd-shift-d": "pane::SplitDown",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePrevItem",
+      "shift-t": "workspace::OpenTerminal",
+      "ctrl-´": "terminal_panel::ToggleFocus",
+      "space e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Terminal || ProjectPanel",
+    "bindings": {
+      "ctrl-´": "workspace::ToggleBottomDock",
+      "space e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    // A for new file, D for new folder
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile"
+    }
+  }
+]
