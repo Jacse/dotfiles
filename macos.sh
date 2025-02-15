@@ -43,6 +43,10 @@ defaults write com.apple.dock largesize -int 48
 # Always show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent YES
 
+# Key repeat
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+
 ####### Aerospace
 
 # Disable separate spaces per screen

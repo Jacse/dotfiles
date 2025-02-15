@@ -26,6 +26,9 @@ plugins=(git fast-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Add path to Python installed with Homebrew
@@ -34,9 +37,6 @@ export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 # Add spicetify
 export PATH=$PATH:~/.spicetify
-
-# For PDM
-export PATH=/Users/jacob/Library/Python/3.11/bin:$PATH
 
 alias nah="git reset --hard && git clean -df"
 alias n="pnpm nx"
