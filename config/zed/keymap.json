@@ -1,40 +1,31 @@
 [
   {
     "bindings": {
-      "alt-cmd-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "alt-cmd-left": ["workspace::ActivatePaneInDirection", "Left"],
-      "alt-cmd-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "alt-cmd-right": ["workspace::ActivatePaneInDirection", "Right"],
-      "alt-cmd-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "alt-cmd-up": ["workspace::ActivatePaneInDirection", "Up"],
-      "alt-cmd-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "alt-cmd-down": ["workspace::ActivatePaneInDirection", "Down"]
+      "alt-cmd-h": "workspace::ActivatePaneLeft",
+      "alt-cmd-left": "workspace::ActivatePaneLeft",
+      "alt-cmd-l": "workspace::ActivatePaneRight",
+      "alt-cmd-right": "workspace::ActivatePaneRight",
+      "alt-cmd-k": "workspace::ActivatePaneUp",
+      "alt-cmd-up": "workspace::ActivatePaneUp",
+      "alt-cmd-j": "workspace::ActivatePaneDown",
+      "alt-cmd-down": "workspace::ActivatePaneDown"
     }
   },
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePrevItem",
+      "shift-h": "pane::ActivatePreviousItem",
       "cmd-d": "pane::SplitRight",
       "cmd-shift-d": "pane::SplitDown",
       "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePrevItem",
-      "shift-t": "workspace::OpenTerminal",
-      "ctrl-´": "terminal_panel::ToggleFocus",
+      "shift-tab": "pane::ActivatePreviousItem",
       "space e": "workspace::ToggleLeftDock"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "cmd-/": ["editor::ToggleComments", { "advance_downwards": false }]
     }
   },
   {
     "context": "Terminal || ProjectPanel",
     "bindings": {
-      "ctrl-´": "workspace::ToggleBottomDock",
       "space e": "workspace::ToggleLeftDock"
     }
   },

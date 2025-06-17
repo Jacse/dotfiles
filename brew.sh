@@ -25,11 +25,12 @@ brew install --cask kitty
 brew install --cask neovide
 
 # tools
-brew install dive # debug docker files
+brew install dive    # debug docker files
 brew install lazygit # git tui
-brew install lsd # better ls
-brew install bat # better cat
-brew install fs # better find
+brew install lsd     # better ls
+brew install bat     # better cat
+brew install fs      # better find
 brew isntall fzf
 brew install pgcli
 brew install fsouza/prettierd/prettierd # prettier as a daemon
+brew install kubectx
