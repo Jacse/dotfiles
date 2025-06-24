@@ -21,5 +21,15 @@
   "show_edit_predictions": true,
   "features": {
     "edit_prediction_provider": "zed"
+  },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 80,
+      "max_severity": null
+    }
   }
 }

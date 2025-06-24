@@ -34,3 +34,4 @@ brew isntall fzf
 brew install pgcli
 brew install fsouza/prettierd/prettierd # prettier as a daemon
 brew install kubectx
+brew install zoxide # better cd
