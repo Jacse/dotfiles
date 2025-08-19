@@ -5,11 +5,11 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # Applications
 export BROWSER='open'
-export TERMINAL='kitty'
+export TERMINAL='ghostty'
 export EDITOR='nvim'
 export VISUAL='nvim'
 export PAGER='less'
-export FONT='Isoevka Nerd Font Mono'
+export FONT="JetBrainsMono Nerd Font"
 
 # Volta  install
 export VOLTA_HOME="$HOME/.volta"

@@ -14,7 +14,7 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
     # 'exec-and-forget borders',
-    'exec-and-forget sketchybar',
+    'exec-and-forget sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
 ]
 
 # Notify Sketchybar about workspace change

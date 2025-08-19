@@ -1,13 +1,13 @@
 [
   {
     "bindings": {
-      "alt-cmd-h": "workspace::ActivatePaneLeft",
+      "ctrl-h": "workspace::ActivatePaneLeft",
       "alt-cmd-left": "workspace::ActivatePaneLeft",
-      "alt-cmd-l": "workspace::ActivatePaneRight",
+      "ctrl-l": "workspace::ActivatePaneRight",
       "alt-cmd-right": "workspace::ActivatePaneRight",
-      "alt-cmd-k": "workspace::ActivatePaneUp",
+      "ctrl-k": "workspace::ActivatePaneUp",
       "alt-cmd-up": "workspace::ActivatePaneUp",
-      "alt-cmd-j": "workspace::ActivatePaneDown",
+      "ctrl-j": "workspace::ActivatePaneDown",
       "alt-cmd-down": "workspace::ActivatePaneDown"
     }
   },
@@ -18,8 +18,6 @@
       "shift-h": "pane::ActivatePreviousItem",
       "cmd-d": "pane::SplitRight",
       "cmd-shift-d": "pane::SplitDown",
-      "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePreviousItem",
       "space e": "workspace::ToggleLeftDock"
     }
   },
@@ -30,14 +28,6 @@
     }
   },
   {
-    "context": "ProjectPanel && not_editing",
-    "use_key_equivalents": true,
-    "bindings": {
-      "tab": "project_panel::Open"
-    }
-  },
-  {
-    // A for new file, D for new folder
     "context": "ProjectPanel && not_editing",
     "bindings": {
       "a": "project_panel::NewFile"

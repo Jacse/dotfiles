@@ -14,19 +14,19 @@ SHADOW=on
 # Setting up the general bar appearance and default values
 sketchybar --bar     height=36                                           \
                      corner_radius=9                                     \
-                     border_width=0                                      \
-                     margin=10                                            \
-                     blur_radius=36                                      \
+                     margin=10                                           \
                      position=top                                        \
-                     padding_left=8                                     \
-                     padding_right=8                                    \
-                     color=$BAR_COLOR                                    \
+                     padding_left=6                                      \
+                     padding_right=6                                     \
+                     color=$BASE                                   \
                      topmost=off                                         \
                      sticky=on                                           \
-                     font_smoothing=on                                  \
+                     font_smoothing=on                                   \
                      y_offset=8                                          \
-                     shadow=$SHADOW                                      \
+                     shadow=off                                          \
                      notch_width=200                                     \
+                     border_color=$SURFACE                             \
+                     border_width=0                                      \
                                                                          \
            --default drawing=on                                          \
                      updates=when_shown                                  \
@@ -43,8 +43,7 @@ sketchybar --bar     height=36                                           \
                      popup.background.border_width=$POPUP_BORDER_WIDTH   \
                      popup.background.corner_radius=$POPUP_CORNER_RADIUS \
                      popup.background.border_color=$POPUP_BORDER_COLOR   \
-                     popup.background.color=$POPUP_BACKGROUND_COLOR      \
-                     popup.background.shadow.drawing=$SHADOW
+                     popup.background.color=$POPUP_BACKGROUND_COLOR 
 
 # Left
 source "$ITEM_DIR/spaces.sh"

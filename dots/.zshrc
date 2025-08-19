@@ -34,6 +34,10 @@ eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add rust stuff
+source ~/.cargo/env
+
 # Add path to Python installed with Homebrew
 export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"
 # Add bin folder (e.g. used by Poetry)
