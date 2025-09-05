@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
 source "$HOME/.config/sketchybar/colors.sh" # Loads all defined colors
-source "$HOME/.config/sketchybar/icons.sh" # Loads all defined icons
+source "$HOME/.config/sketchybar/icons.sh"  # Loads all defined icons
 
-ITEM_DIR="$HOME/.config/sketchybar/items" # Directory where the items are configured
+ITEM_DIR="$HOME/.config/sketchybar/items"     # Directory where the items are configured
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins" # Directory where all the plugin scripts are stored
 
 FONT="SF Pro" # Needs to have Regular, Bold, Semibold, Heavy and Black variants
@@ -12,38 +12,34 @@ ICON_FONT="JetBrainsMono Nerd Font"
 SHADOW=on
 
 # Setting up the general bar appearance and default values
-sketchybar --bar     height=36                                           \
-                     corner_radius=9                                     \
-                     margin=10                                           \
-                     position=top                                        \
-                     padding_left=6                                      \
-                     padding_right=6                                     \
-                     color=$BASE                                   \
-                     topmost=off                                         \
-                     sticky=on                                           \
-                     font_smoothing=on                                   \
-                     y_offset=8                                          \
-                     shadow=off                                          \
-                     notch_width=200                                     \
-                     border_color=$SURFACE                             \
-                     border_width=0                                      \
-                                                                         \
-           --default drawing=on                                          \
-                     updates=when_shown                                  \
-                     label.font="$FONT:Regular:12.0"                     \
-                     icon.font="$ICON_FONT:Regular:14.0"                 \
-                     icon.color=$ICON_COLOR                              \
-                     label.color=$LABEL_COLOR                            \
-                     icon.padding_left=$PADDINGS                         \
-                     icon.padding_right=$PADDINGS                        \
-                     label.padding_left=$PADDINGS                        \
-                     label.padding_right=$PADDINGS                       \
-                     background.padding_right=$PADDINGS                  \
-                     background.padding_left=$PADDINGS                   \
-                     popup.background.border_width=$POPUP_BORDER_WIDTH   \
-                     popup.background.corner_radius=$POPUP_CORNER_RADIUS \
-                     popup.background.border_color=$POPUP_BORDER_COLOR   \
-                     popup.background.color=$POPUP_BACKGROUND_COLOR 
+sketchybar --bar height=36 \
+  corner_radius=9 \
+  margin=10 \
+  position=top \
+  padding_left=6 \
+  padding_right=6 \
+  color=0x771e1e2e \
+  topmost=off \
+  sticky=on \
+  font_smoothing=on \
+  y_offset=8 \
+  shadow=off \
+  notch_width=200 \
+  border_color=$SURFACE \
+  border_width=0 \
+  blur_radius=5 \
+  --default drawing=on \
+  updates=when_shown \
+  label.font="$FONT:Regular:12.0" \
+  icon.font="$ICON_FONT:Regular:14.0" \
+  icon.color=$ICON_COLOR \
+  label.color=$LABEL_COLOR \
+  icon.padding_left=$PADDINGS \
+  icon.padding_right=$PADDINGS \
+  label.padding_left=$PADDINGS \
+  label.padding_right=$PADDINGS \
+  background.padding_right=$PADDINGS \
+  background.padding_left=$PADDINGS
 
 # Left
 source "$ITEM_DIR/spaces.sh"

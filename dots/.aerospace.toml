@@ -14,7 +14,7 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
     # 'exec-and-forget borders',
-    'exec-and-forget sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+    'exec-and-forget sketchybar',
 ]
 
 # Notify Sketchybar about workspace change
@@ -67,8 +67,8 @@ inner.vertical = 8
 outer.left = 8
 outer.bottom = 8
 outer.top = [
-    { monitor.built-in = 24 },
-    54,
+    { monitor.built-in = 16 },
+    46,
 ] # different for mac built-in and external monitor
 outer.right = 8
 
