@@ -2,7 +2,7 @@
 
 # Color Palette
 BLACK=0xff181926
-WHITE=0xffcad3f5
+WHITE=0xffffffff
 GREEN=0xffa6da95
 BLUE=0xff8aadf4
 YELLOW=0xffeed49f
@@ -11,6 +11,11 @@ RED=0ffed8796
 ORANGE=0xfff5a97f
 MAGENTA=0xffc6a0f6
 TRANSPARENT=0x00000000
+
+# Legora engineering colors
+CYAN=0xff41c6ee
+BLUE=0xff1f60b7
+DARK_BLUE=0xff143877
 
 # General bar colors
 ICON_COLOR=$WHITE  # Color of all icons

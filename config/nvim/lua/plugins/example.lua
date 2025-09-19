@@ -5,7 +5,14 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    opts = {
+      transparent_background = true,
+    },
+    priority = 1000,
+  },
   {
     "LazyVim/LazyVim",
     opts = {

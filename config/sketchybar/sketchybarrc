@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 source "$HOME/.config/sketchybar/colors.sh" # Loads all defined colors
-source "$HOME/.config/sketchybar/icons.sh"  # Loads all defined icons
 
 ITEM_DIR="$HOME/.config/sketchybar/items"     # Directory where the items are configured
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins" # Directory where all the plugin scripts are stored
@@ -18,16 +17,15 @@ sketchybar --bar height=36 \
   position=top \
   padding_left=6 \
   padding_right=6 \
-  color=0x771e1e2e \
+  color=0x991e1e2e \
   topmost=off \
   sticky=on \
   font_smoothing=on \
   y_offset=8 \
   shadow=off \
   notch_width=200 \
-  border_color=$SURFACE \
   border_width=0 \
-  blur_radius=5 \
+  blur_radius=10 \
   --default drawing=on \
   updates=when_shown \
   label.font="$FONT:Regular:12.0" \
